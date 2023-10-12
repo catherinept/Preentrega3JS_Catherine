@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1{ /*Texto título FDT Shop*/
+    color:rgb(173, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{ /*Texto Cards C/Imagen*/
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(199, 0, 0);
+}
+
+img{ /*Imágenes*/
+    max-width: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+/* Main */
+.container-items{ /*Cards*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.item:hover{ /*Sombra Cards*/
+    box-shadow: 0 10px 20px rgba(222, 0, 0, 0.2);
+}
+
+.item img{ /*Imágenes Cards*/
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.info-producto{ /*Info Cards*/
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{ /*Precio Cards*/
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-producto button{ /*Agregar Carrito Cards*/
+    border-radius: 5px;
+    border: none;
+    background: none;
+    background-color: #423f3a;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+#agregarProducto{ /*Añadir Nuevo Producto*/
+    background-color: rgb(102, 101, 101);
+    color: rgb(240, 239, 239);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
